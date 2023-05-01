@@ -1,0 +1,27 @@
+*{
+    font-size: 62.5%;
+}
+
+#container{
+    height: auto;
+}
+:root{
+    --purple-800: #4b1c71;
+    --purple-600: #7f4ca5;
+    --purple-400: #b57edc;
+    --purple-200: #dbb6ee;
+    --white: #fff0ff;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--white);
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 3.6rem;
+}

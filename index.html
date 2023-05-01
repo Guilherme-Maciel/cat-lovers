@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/configs.css">
+    <link rel="stylesheet" href="./css/components/header.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Cat Lovers !</title>
+</head>
+<body>
+    <div class="absolute">
+        <img src="./img/cat_white.png" alt="Gato" onclick="play()">
+        <audio id="audio-meow" src="./audio/meow.mp3"></audio>
+    </div>
+    <div id="container">
+        <header>
+            <i class="fas fa-paw brand"></i>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Fotos</a></li>
+                    <li><a href="#">Experiências</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section class="cat-background">
+                <div class="video-container">
+                    <video width="100%" height="100%" controls>
+                        <source src="./video/cat.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+            </section>
+            <section class="why-cat">
+                <div class="why-cat-text">
+                    <h1>Por que gatos?</h1>
+                    <ul>
+                        <li>São muito fofos. &#129321;</li>
+                        <li>Te faz companhia. &#128522;</li>
+                        <li>Caça ratos. &#128000;</li>
+                        <li>São engraçados. &#128514;</li>
+                        <li>Tomam banho. &#128561;</li>
+                        <li>Elegantes. &#128526;</li>
+                        <li>Ronronam. &#128008;</li>
+                    </ul>
+                </div>
+                <div class="why-cat-img">
+                    <img src="./img/why-cat.png" alt="Por que gatos?">
+                </div>
+            </section>
+            <hr class="line"/>
+            <section class="experiences">
+                <h1>Conte-nos suas experiências :D</h1>
+
+            </section>
+        </main>
+    </div>
+    <script>
+        function play(){
+            var audio = document.getElementById("audio-meow");
+            audio.play();
+
+        }
+    </script>
+</body>
+</html>

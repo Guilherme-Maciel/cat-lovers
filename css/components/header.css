@@ -1,0 +1,39 @@
+#container > header{
+    position: sticky;
+    top: 0;
+    height: 100px;
+    box-shadow: 0px 2px 15px -3px rgba(0,0,0,0.50);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    z-index: 999;
+}
+
+#container header .brand{
+    font-size: 6rem;
+    rotate: -45deg;
+    margin-left: 1.6rem;
+    color: var(--purple-800);
+}
+#container header .nav{
+    padding-right: 1.6rem;
+}
+#container header .nav ul{
+    list-style: none;
+    text-decoration: none;
+    font-size: 4.4rem;
+    display: flex;
+    gap: 2.4rem;
+}
+#container header .nav ul li{
+    transition: transform .2s;
+}
+#container header .nav ul li:hover{
+    transform: scale(1.1);
+}
+
+#container header .nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
