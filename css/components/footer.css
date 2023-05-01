@@ -1,0 +1,49 @@
+#container footer{
+    height: 200px;
+    box-shadow: 0px 2px 15px -3px rgba(0,0,0,0.50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple-800);
+    z-index: 999;
+    margin-top: 5rem;
+}
+
+#container footer .brand{
+    font-size: 6rem;
+    rotate: -45deg;
+    margin-left: 1.6rem;
+    color: var(--purple-400);
+    position: absolute;
+    left: 0;
+    margin-bottom: 10rem;
+
+}
+
+#container footer p{
+    font-size: 2rem;
+    color: var(--purple-400);
+    font-weight: 600;
+}
+
+/*#container footer .nav{
+    padding-right: 1.6rem;
+}
+#container footer .nav ul{
+    list-style: none;
+    text-decoration: none;
+    font-size: 4.4rem;
+    display: flex;
+    gap: 2.4rem;
+}
+#container footer .nav ul li{
+    transition: transform .2s;
+}
+#container footer .nav ul li:hover{
+    transform: scale(1.1);
+}
+
+#container footer .nav ul li a{
+    text-decoration: none;
+    color: #000;
+} */

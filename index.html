@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/configs.css">
     <link rel="stylesheet" href="./css/components/header.css">
+    <link rel="stylesheet" href="./css/components/footer.css">
+
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/cat_white.png" type="image/x-icon">
     <title>Cat Lovers !</title>
 </head>
 <body>
@@ -42,25 +45,57 @@
                 <div class="why-cat-text">
                     <h1>Por que gatos?</h1>
                     <ul>
-                        <li>São muito fofos. &#129321;</li>
-                        <li>Te faz companhia. &#128522;</li>
-                        <li>Caça ratos. &#128000;</li>
-                        <li>São engraçados. &#128514;</li>
-                        <li>Tomam banho. &#128561;</li>
-                        <li>Elegantes. &#128526;</li>
-                        <li>Ronronam. &#128008;</li>
+                        <li><b>São muito fofos!</b> Não tem nada mais fofo no planeta do que um gatinho. &#129321;</li>
+                        <li><b>Te fazem companhia!</b> Podem ser teimosos às vezes, mas são carinhosos e acolhedores. &#128522;</li>
+                        <li><b>Caçam ratos!</b> Você nunca mais vai se preocupar com roedores na sua cozinha. &#128000;</li>
+                        <li><b>São engraçados!</b> São seres brincalhões e rendem muitas risadas. &#128514;</li>
+                        <li><b>Tomam banho!</b> São seres higiênicos e que sempre tentam se manter limpinhos. &#128561;</li>
+                        <li><b>São elegantes!</b> Andam como se fossem os donos da casa. &#128526;</li>
+                        <li><b>Ronronam!</b> Nada acalma mais que o ronronar de um gato. &#128008;</li>
                     </ul>
                 </div>
                 <div class="why-cat-img">
-                    <img src="./img/why-cat.png" alt="Por que gatos?">
                 </div>
             </section>
             <hr class="line"/>
             <section class="experiences">
                 <h1>Conte-nos suas experiências :D</h1>
-
+                <form action="" class="experiences-form">
+                    <div class="input-box">
+                        <label for="user-name">Seu nome:</label>
+                        <input type="text" name="user-name" placeholder="Nome...">
+                    </div>
+                    <div class="input-box">
+                        <label for="user-name">Conte-nos mais:</label>
+                        <textarea name="user-experience" id="user-experience" rows="6" wrap="soft" placeholder="Experiência..."></textarea>
+                    </div>
+                </form>
+            </section>
+            <hr class="line"/>
+            <section class="races">
+                <h1>Raças e descrições</h1>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Raça</th>
+                        <th width="55%">Descrição</th>
+                        <th>Expectativa</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Ragdoll</td>
+                        <td>Uma das raças de gato mais populares. Possuem olhos azuis, pelos compridos, dócil e com características marcantes.</td>
+                        <td>12 - 17 anos</td>
+                      </tr>
+                    </tbody>
+                </table>
             </section>
         </main>
+        <footer>
+            <i class="fas fa-paw brand"></i>
+            <p>@Copyright - Todos os direitos reservados.</p>
+        </footer>
     </div>
     <script>
         function play(){
