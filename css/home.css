@@ -4,9 +4,27 @@ hr.line{
     height: 2px;
     margin: 0 10rem;
     margin-top: 3rem;
-
-
 }
+
+button[type="submit"] {
+    background-color: var(--purple-800);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1.6rem;
+  }
+  
+  button[type="submit"]:hover {
+    opacity: 0.9;
+    transition: 0.2s;
+  }
 
 #container .cat-background{
     width: 100%;
