@@ -1,0 +1,49 @@
+#container main {
+    margin: 0 5rem;
+}
+
+#container main .experiences{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+#container main .experiences .experiences-container{
+    width: 60%;
+    min-height: fit-content;
+    max-height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+}
+
+#container main .experiences .experiences-container .left-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+    border-right: 2px #000 solid;
+
+}
+
+#container main .experiences .experiences-container .left-div .user-pic{
+    height: 75px;
+    width: 75px;
+    background-color: red;
+    border-radius: 50%;
+
+}
+
+#container main .experiences .experiences-container .right-div{
+    flex: 1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}

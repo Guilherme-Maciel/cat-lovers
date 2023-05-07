@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/pictures.css">
     <link rel="stylesheet" href="../css/configs.css">
     <link rel="stylesheet" href="../css/components/header.css">
     <link rel="stylesheet" href="../css/components/footer.css">
@@ -20,15 +20,73 @@
 <body>
     <div id="container">
         <header>
-            <i class="fas fa-paw brand"></i>
+            <a href="/"><i class="fas fa-paw brand"></i></a>
             <div class="nav">
                 <ul>
-                    <li><a href="#">Fotos</a></li>
-                    <li><a href="#">Experiências</a></li>
+                    <li><a href="/html/pictures.html">Fotos</a></li>
+                    <li><a href="/html/experiences.html">Experiências</a></li>
                 </ul>
             </div>
         </header>
+        <main>
+            <h1>Confira algumas fotos!</h1>
+            <section class="pictures">
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-1.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-2.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-3.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-4.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-5.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-6.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-7.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-8.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-9.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-10.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-11.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-12.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-13.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-14.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-15.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-16.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-17.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-18.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-19.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-20.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-21.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-22.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-23.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-24.jpg);" onclick="showCatPic(event)"></div>
+                <div class="cat-pic" style="background-image: url(../img/cat-pic-25.jpg);" onclick="showCatPic(event)"></div>
 
+
+
+            </section>
+        </main>
+        <footer>
+            <i class="fas fa-paw brand"></i>
+            <p>@Copyright - Todos os direitos reservados.</p>
+        </footer>
+        <div class="modal-background" onclick="hideCatPic(event)">
+            <div class="modal-cat-pic">
+                <img src="">
+            </div>
+        </div>
     </div>
+    <script>
+        function showCatPic(e){
+            var modalBackground = document.querySelector(".modal-background");
+            var modalCatPic = document.querySelector(".modal-cat-pic");
+            var img = modalCatPic.querySelector("img");
+
+            var url = String(getComputedStyle(e.target).backgroundImage.slice(4, -1).replace(/"/g, ""));
+
+            img.src = url;
+            modalBackground.style.display = "flex";
+        }
+        
+        function hideCatPic(e){
+            var modalBackground = document.querySelector(".modal-background");
+            modalBackground.style.display = "none";
+        }
+    </script>
 </body>
 </html>
